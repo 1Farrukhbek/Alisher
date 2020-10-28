@@ -18,6 +18,7 @@ flight = Math.round(flight * usd);
 hotel = Math.round(hotel * usd);
 museum = Math.round(museum * euro);
 
+
 var expence = flight + hotel + museum;
 document.querySelector('.total-cost').textContent = (expence + ' so\'m');
 
@@ -25,7 +26,7 @@ var currentMoney = prompt('QANCHA PULING BOR?').trim();
 document.querySelector('.alisher-money').textContent = (currentMoney + ' so\'m');
 
 if (expence <= currentMoney) {
-  document.querySelector('.answer').textContent = ('ALISHER PULING YATADI, LIKIN JS DARSLARIDAN QOCHIB KETOLMAYSAN!')
+  document.querySelector('.answer').textContent = ('ALISHER PULING YATADI, LIKIN JS DARSLARIDAN BARIBIR QOCHIB KETOLMAYSAN!')
 
   var element = document.getElementById("yes");
   element.classList.add("d-flex");
