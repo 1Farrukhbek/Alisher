@@ -12,7 +12,7 @@ museumCost = Math.round(museumCost * EURO_TO_UZS);
 var totalExpense = ticketCost + hotelCost + museumCost;
 document.querySelector('.total-cost').textContent = (totalExpense + ' so\'m');
 
-var currentMoney = parseInt(prompt('QANCHA PULING BOR?').trim());
+var currentMoney = parseInt(prompt('QANCHA PULING BOR?').trim(), 10);
 document.querySelector('.alisher-money').textContent = (currentMoney + ' so\'m');
 
 if (totalExpense <= currentMoney) {
